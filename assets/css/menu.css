@@ -1,0 +1,101 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin:3em;
+    width:15%;
+    height:15%;
+    text-align:left;
+    display:inline-block;
+}
+
+.card-title {
+    white-space: nowrap;
+    width: 8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-container .card .buy-icon {
+    display:block; 
+    cursor: pointer;
+}
+
+.card-container .card .container {
+    display:block; 
+}
+
+.card-container .card .container .card-title .h4-sub {
+    color: rgba(25, 24, 24, 0.42); 
+    font-size: 12px;
+}
+
+.card-container .card .card-alt-main .card-alt-def {
+    position: absolute; 
+    width: 15%; 
+    display: none;
+}
+
+.card-container .card .card-alt-main .card-alt{
+    position: absolute;  
+    color:black; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    width:13%; 
+    word-wrap: break-word; 
+    display:none;
+}
+
+.card-desc {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin:3em;
+    width:15%;
+    height:15%;
+    text-align:left;
+    display:inline-block;
+}
+
+.card-container {
+      margin-top: 250px;
+         text-align:center;
+    width:100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img.buy-icon {
+	width: 50px;
+    position: relative;
+    float: right;
+    top: -33px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card img {
+	width:100%;
+}
+
+.bgimg-1 {
+	position: fixed; 
+	top: 0; 
+	height: 250px; 
+	width:100%; 
+	z-index: 1000;
+}
+
+.menu-footer {
+    height: 150px;
+    width: 100%;
+    float: left;"
+}

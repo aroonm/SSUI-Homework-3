@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/main.css"/>
+<link rel="stylesheet" href="assets/css/menu.css"/>
+<script src="assets/js/menu.js"></script>
+</head>
+<body onload="preparePagePostLoad();">
+
+  <div class="bgimg-1">
+    <div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html" class="active">MENU</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="checkout.html">CART<span id="cart-score" style=""> 0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+      <div class = "card-container">
+
+        <div class="card" >
+          <div  class="card-alt-main" onclick="toggleMenuCard('1');">
+            <img id= "card1" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p id="card-alt1" class="card-alt">This apple pecan cake with caramel glaze will get you in the mood for fall. The glaze on this cake oozes with caramel goodness. The scrumptious apple flavor, with delicious pecans mixed throughout, will definitely satisfy your taste buds!</p>
+            <img src="images/menu1.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Maple Apple Pecan<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('2');">
+            <img id="card2" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt2" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu2.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Bacon<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('3');">
+            <img id="card3" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt3" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu3.png" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Walnut<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('4');">
+            <img id="card4" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt4" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu4.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Original (Gluten-free)<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('5');">
+            <img id="card5" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt5" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu5.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Original (Vegan)<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('6');">
+            <img id="card6" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt6" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu6.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Original<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('7');">
+            <img id="card7" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt7" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu7.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Pumpkin Spice<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('8');">
+            <img id="card8" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt8" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu8.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Caramel Pecan<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('9');">
+            <img id="card9" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt9" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu9.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Carrot Cake<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('10');">
+            <img id="card10" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt10">These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu10.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Old Fashioned Buttermilk<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('11');">
+            <img id="card11" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt11" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu11.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Strawberry Rhubarb<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('12');">
+            <img id="card12" src="images/def.jpg" class="card-alt-def" alt="Avatar">
+            <p class="card-alt" id="card-alt12" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu12.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Birthday Cake<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('13');">
+            <img id="card13" src="images/def.jpg" class="card-alt-def" alt="Avatar" >
+            <p class="card-alt" id="card-alt13" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu13.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy" onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Lemon Lavender<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('14');">
+            <img id="card14" src="images/def.jpg" class="card-alt-def" alt="Avatar" >
+            <p class="card-alt" id="card-alt14" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu14.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy"  onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Cranberry<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+
+          <div class="card" >
+          <div class="card-alt-main" onclick="toggleMenuCard('15');">
+            <img id="card15" src="images/def.jpg" class="card-alt-def" alt="Avatar" >
+            <p class="card-alt" id="card-alt15" >These Bacon Wrapped Cinnamon Rolls have bacon baked right in. Our recipe has the magical pairing of salty and sweet, making them tio die for.</p>
+            <img src="images/menu15.jpg" alt="Avatar">
+          </div>
+          <img class="buy-icon"  src="images/buy.png" alt="Buy"  onclick="incrementCartScore();">
+          <div class="container">
+            <h4 class="card-title">Blackberry<br>
+              <span class="h4-sub">$1.25</span>
+            </h4> 
+          </div>
+          </div>
+</div>
+
+<div class = "menu-footer" >
+</div>
+
+</div>
+
+<script>
+</script>
+
+</body>
+</html> 

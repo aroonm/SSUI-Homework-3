@@ -1,0 +1,232 @@
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  /*opacity: 0.65;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+}
+.bgimg-1 {
+  background-image: url("../../images/cafeBG.jpg");
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption a.button {
+	background-color: rgba(249, 250, 251, 0.21)
+}
+
+.caption a span {
+	color: rgba(247, 247, 247, 1);
+  padding: 18px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+h4-sub {
+	letter-spacing: 0px;
+  text-transform: uppercase;
+  font: 9px "Lato", sans-serif;
+  color: #111;
+}
+
+h4 {
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font: 14px "Lato", sans-serif;
+  color: #111;
+}
+
+#nav ul, #social-media ul, #receipt ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+/* Navigation Bar */
+
+
+	#nav {
+		padding: 1em;
+    	border-top-left-radius: 0.25em;
+    	border-top-right-radius: 0.25em;
+    	cursor: default;
+    	float: right;
+	}
+
+		#nav a:hover ,  #social-media a:hover, #receipt a:hover{
+			color: #FFFFFF;
+		}
+
+		#nav + #main {
+			padding-top: 4.25em;
+		}
+
+		#nav ul , #social-media ul, #receipt ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+
+
+			#nav ul li , #social-media ul li, #receipt ul li {
+				transition: margin 0.2s ease;
+				display: inline-block;
+				margin: 0 0.35em;
+				padding: 0;
+				vertical-align: middle;
+			}
+
+				#nav ul li a , #social-media ul li a, #receipt ul li a {
+					transition: font-size 0.2s ease;
+					display: inline-block;
+					height: 2.25em;
+					line-height: 2.25em;
+					padding: 0 1.50em;
+					border: 0;
+					color: #ffffff;
+					text-decoration: none;
+					border-radius: 8px;
+					box-shadow: inset 0 0 0 1px transparent;
+					letter-spacing: 1px;
+				}
+
+				#receipt {
+					transition: font-size 0.2s ease;
+					display: inline-block;
+					height: 2.25em;
+					line-height: 2.25em;
+					padding: 0 1.50em;
+					border: 0;
+					color: #57da67;
+					text-decoration: none;
+					border-radius: 8px;
+					box-shadow: inset 0 0 0 1px transparent;
+					letter-spacing: 1px;
+				}
+
+				#nav ul li a i {
+			padding-right: 0.50em;
+		}	
+
+					#nav ul li a:hover , #social-media ul li a:hover, #receipt ul li a:hover {
+						background-color: rgba(222, 222, 222, 0.25);
+					}
+
+					#nav ul li a.active {
+						box-shadow: none;
+					}
+
+		#nav.alt , #social-media.alt, #receipt.alt{
+			position: fixed;
+			top: 0;
+			padding: 0.5em 1em;
+			background-color: rgba(247, 247, 247, 0.95);
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			z-index: 10000;
+		}
+
+			#nav.alt ul li , #social-media.alt ul li, #receipt.alt ul li{
+				margin: 0 0.175em;
+			}
+
+				#nav.alt ul li a , #social-media ul li a, #receipt ul li a{
+					font-size: 0.9em;
+				}
+
+				#nav ul li a.active {
+						background-color: rgba(255, 255, 255, 0.45);
+						box-shadow: none;
+					}
+
+
+
+
+
+		#social-media {
+			padding: 0.50em;
+	    	border-top-left-radius: 0.25em;
+	    	border-top-right-radius: 0.25em;
+	    	cursor: default;
+	    	background-color: rgba(10, 10, 10, 0.15);
+	    	font-size: x-large;
+
+	    	position: absolute;
+	    	width: 100%;
+	    	bottom:0px;
+	    	text-align: center;
+		}
+
+		#receipt {
+			padding: 0.50em;
+	    	border-top-left-radius: 0.25em;
+	    	border-top-right-radius: 0.25em;
+	    	cursor: default;
+	    	background-color: rgba(79, 152, 54, 0.78);
+	    	font-size: x-large;
+
+	    	position: absolute;
+	    	width: 100%;
+	    	bottom:0px;
+	    	text-align: center;
+		}
+	
+	/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		appearance: none;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-radius: 8px;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 300;
+		height: 2.75em;
+		line-height: 2.75em;
+		min-width: 9.25em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	.button a:hover {
+		background-color: #FFFFFF;
+	}
