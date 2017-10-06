@@ -16,9 +16,8 @@ input[type=number]
     margin: auto;
     width: 60%;
     margin-top:300px;
-    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
     background-color: rgba(149, 150, 148, 0.12);
-    padding: 10px;
 }
 
 .nav #confirm-checkout-green {
