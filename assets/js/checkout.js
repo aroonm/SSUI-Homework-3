@@ -64,11 +64,11 @@ function generateReceipt() {
     myTable+="<td style='padding: 2em 3em 0em 1em; width: 200px; '>" + itemNames[i] + "</td>";
     myTable+="<td style='padding: 2em 0em 0em 5em; width: 200px; text-align: right;'>" + "" + "</td>";
     myTable+="<td id='priceData"+i+"' style='padding: 2em 3em 0em 5em; width: 100px; text-align: right;'>$" + itemPrice[i].toFixed(2) + "</td></tr>";
-    myTable+="<td style='width:60%; position: absolute; opacity:0.2; padding: 5px 0px 5px 0px;'><hr></td>";
+    myTable+="<td style='width:60%; position: absolute; opacity:0.2; padding: 5px 0px 5px 0px;'></td>";
   }  
   calculateTotal();
 
-  myTable+="<td style='padding: 0em 3em 2em 1em; width: 100px; text-align: right;'>" + "" + "</td></tr>";
+  myTable+="<td style='padding: 0em 3em 2em 1em; width: 100px; text-align: right;'></td></tr>";
    myTable+="</table>";
 
  document.getElementById('tablePrint').innerHTML = myTable;
