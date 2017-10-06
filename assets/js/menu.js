@@ -5,7 +5,10 @@ function preparePagePostLoad() {
 }
 
 function getCartScore(){
-    return localStorage.getItem("score");
+    if(localStorage.getItem("score")) {
+        return localStorage.getItem("score");
+    }
+    return 0;
 }
 
 function setCartScore() {
