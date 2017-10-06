@@ -21,27 +21,37 @@
           <li><a href="index.html">HOME</a></li>
           <li><a href="menu.html" >MENU</a></li>
           <li><a href="#">ABOUT</a></li>
-          <li><a href="checkout.html" class="active">CART<span id="cart-score" stylxoe="">0</span></a></li>
+          <li><a href="checkout.html" class="active">CART<span id="cart-score" style="">0</span></a></li>
         </ul>
       </nav>
     </div>
     </div>
 
-	<div id="tableContainer" style="
-	margin: auto;
-    width: 60%;
-    margin-top:300px;
-    border-radius: 10px;
-    background-color: rgba(149, 150, 148, 0.12);;
-    padding: 10px;">
-	      <div id="tablePrint" class="receipt-container" style=""> 	
-	  		</div>    
+	<div id="tableContainer" style="background-color: rgba(149, 150, 148, 0);">
+        <div id="invoice-header" style="height: 10em; background-color: #d9d9da; width: 100%; float: right;">
+        <div style="float: left; position: absolute; width: 100%; margin-top: 3em; font-size: 21px; padding: 2em 2em 0em 2em;">BUN BUN BAKE SHOP</div>
+
+          <div style="float: right; position: relative; width: 100%; text-align: end; padding: 2em 3em 0em 2em;">INVOICE</div>
+          <div style="position: relative; text-align: end; padding: 0em 3em 0em 2em;">6th October 2017</div>
+
+
+          <div style="position: relative; text-align: end; margin-top: 28px; padding: 0em 3em 0em 2em;">$0</div>
+        </div>
+
+        <div id="invoice-body" style="float:left; width:100%; height: 60em; background-color: (197, 197, 194, 0.05);">
+            <div id="tablePrint" class="receipt-container" style="">  </div> 
+        </div>
+
+        <div id="invoice-footer" style="float:left; height: 10em; background-color: #d9d9da;">
+          
+        </div>
+	         
 	</div>
 
 	<div>
-		<nav id="social-media" style="position:fixed;height:8%; background-color: #2ecc71;">
+		<nav id="confirm-checkout-green" style="">
 			<div>
-				<h3>Confirm Checkout: $<span id="confirm-checkout">0</span></h3>
+				<h4>Confirm Checkout $<span id="confirm-checkout">0</span></h4>
 			</div>
 		</nav>
 	</div>

@@ -8,6 +8,25 @@ input[type=number]
   -moz-appearance: textfield;
 }
 
+.table {
+  border-color: red;
+}
+
+#tableContainer {
+    margin: auto;
+    width: 60%;
+    margin-top:300px;
+    border-radius: 10px;
+    background-color: rgba(149, 150, 148, 0.12);
+    padding: 10px;
+}
+
+.nav #confirm-checkout-green {
+  position:fixed;
+  height:8%; 
+  background-color: rgba(50, 148, 32, 0.15);
+}
+
 .quantity input {
   width: 30px;
   height: 42px;
@@ -29,6 +48,10 @@ input[type=number]
   float: left;
   position: relative;
   height: 42px;
+}
+
+.tr {
+  border-bottom: 1pt solid black
 }
 
 .quantity-button {

@@ -13,7 +13,7 @@ function numberChanged(rowNumber) {
 
 itemQuant[rowNumber] = document.getElementById('itemQuant'+rowNumber).value;
 
-document.getElementById('priceData'+rowNumber).innerHTML = itemPrice[rowNumber] * itemQuant[rowNumber];
+document.getElementById('priceData'+rowNumber).innerHTML = "$"+(itemPrice[rowNumber] * itemQuant[rowNumber]).toFixed(2);
 
 itemTotalPrice [rowNumber] = itemPrice[rowNumber] * itemQuant[rowNumber]
 
@@ -29,8 +29,7 @@ function calculateTotal() {
 
 	total = total.toFixed(2);
 
-	document.getElementById('confirm-checkout').innerHTML = total;
-	//console.log(total);
+	document.getElementById('confirm-checkout').innerHTML = ""+total;
 }
 
 function getCartScore(){
@@ -56,16 +55,16 @@ function generateReceipt() {
 	itemPrice = [1.00, 3.00, 9.00, 1.11, 1.00, 1.65];
 	
 
-    var myTable= "<table style='align:center'>";
+    var myTable= "<table style='border-color:red;'>";
 
 
   for (var i=0; i<getCartScore(); i++) {
   	itemTotalPrice[i] = itemPrice[i]; 
     myTable+="<tr><td style='padding: 2em 0em 0em 3em; float: left;'><div class='quantity'><input id='itemQuant"+i+"' type='number' min='0' max='9' step='1' value='1' onchange='numberChanged("+i+")'></div></td>";
-    myTable+="<td style='padding: 2em 3em 0em 0em; width: 200px; '>" + itemNames[i] + "</td>";
-    myTable+="<td style='padding: 2em 0em 0em 5em; width: 200px; text-align: right;'>" + "$" + "</td>";
-    myTable+="<td id='priceData"+i+"' style='padding: 2em 3em 0em 1em; width: 100px; text-align: right;'>" + itemPrice[i].toFixed(2) + "</td></tr>";
-
+    myTable+="<td style='padding: 2em 3em 0em 1em; width: 200px; '>" + itemNames[i] + "</td>";
+    myTable+="<td style='padding: 2em 0em 0em 5em; width: 200px; text-align: right;'>" + "" + "</td>";
+    myTable+="<td id='priceData"+i+"' style='padding: 2em 3em 0em 5em; width: 100px; text-align: right;'>$" + itemPrice[i].toFixed(2) + "</td></tr>";
+    myTable+="<td style='width:60%; position: absolute; opacity:0.2; padding: 5px 0px 5px 0px;'><hr></td>";
   }  
   calculateTotal();
 

@@ -68,7 +68,7 @@ h4 {
   color: #111;
 }
 
-#nav ul, #social-media ul, #receipt ul {
+#nav ul, #social-media ul, #receipt ul, #confirm-checkout-green ul {
 			margin: 0;
 			padding: 0;
 			list-style: none;
@@ -85,7 +85,7 @@ h4 {
     	float: right;
 	}
 
-		#nav a:hover ,  #social-media a:hover, #receipt a:hover{
+		#nav a:hover ,  #social-media a:hover, #receipt a:hover, #confirm-checkout-green a:hover {
 			color: #FFFFFF;
 		}
 
@@ -93,7 +93,7 @@ h4 {
 			padding-top: 4.25em;
 		}
 
-		#nav ul , #social-media ul, #receipt ul{
+		#nav ul , #social-media ul, #receipt ul, #confirm-checkout-green ul {
 			margin: 0;
 			padding: 0;
 			list-style: none;
@@ -101,7 +101,7 @@ h4 {
 
 
 
-			#nav ul li , #social-media ul li, #receipt ul li {
+			#nav ul li , #social-media ul li, #receipt ul li, #confirm-checkout-green ul li {
 				transition: margin 0.2s ease;
 				display: inline-block;
 				margin: 0 0.35em;
@@ -109,7 +109,7 @@ h4 {
 				vertical-align: middle;
 			}
 
-				#nav ul li a , #social-media ul li a, #receipt ul li a {
+				#nav ul li a , #social-media ul li a, #receipt ul li a, #confirm-checkout-green ul li a {
 					transition: font-size 0.2s ease;
 					display: inline-block;
 					height: 2.25em;
@@ -141,7 +141,7 @@ h4 {
 			padding-right: 0.50em;
 		}	
 
-					#nav ul li a:hover , #social-media ul li a:hover, #receipt ul li a:hover {
+					#nav ul li a:hover , #social-media ul li a:hover, #receipt ul li a:hover, #confirm-checkout-green ul li a:hover {
 						background-color: rgba(222, 222, 222, 0.25);
 					}
 
@@ -149,7 +149,7 @@ h4 {
 						box-shadow: none;
 					}
 
-		#nav.alt , #social-media.alt, #receipt.alt{
+		#nav.alt , #social-media.alt, #receipt.alt, #confirm-checkout-green.alt {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
@@ -159,11 +159,11 @@ h4 {
 			z-index: 10000;
 		}
 
-			#nav.alt ul li , #social-media.alt ul li, #receipt.alt ul li{
+			#nav.alt ul li , #social-media.alt ul li, #receipt.alt ul li, #confirm-checkout-green.alt ul li {
 				margin: 0 0.175em;
 			}
 
-				#nav.alt ul li a , #social-media ul li a, #receipt ul li a{
+				#nav.alt ul li a , #social-media ul li a, #receipt ul li a, #confirm-checkout-green ul li a {
 					font-size: 0.9em;
 				}
 
@@ -185,6 +185,19 @@ h4 {
 	    	font-size: x-large;
 
 	    	position: absolute;
+	    	width: 100%;
+	    	bottom:0px;
+	    	text-align: center;
+		}
+
+		#confirm-checkout-green {
+			padding: 0.50em;
+	    	border-top-left-radius: 0.25em;
+	    	border-top-right-radius: 0.25em;
+	    	cursor: default;
+	    	font-size: x-large;
+	    	position: fixed;
+	    	background-color: rgba(33, 162, 79, 0.98);
 	    	width: 100%;
 	    	bottom:0px;
 	    	text-align: center;
@@ -229,4 +242,8 @@ h4 {
 
 	.button a:hover {
 		background-color: #FFFFFF;
+	}
+
+	#confirm-checkout-green h4 {
+		color: white;
 	}
