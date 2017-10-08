@@ -27,38 +27,45 @@
     </div>
     </div>
 
-	<div id="tableContainer" style="background-color: rgba(149, 150, 148, 0);">
-        <div id="invoice-header" style="height: 10em; background-color: #f9fafc; width: 100%; float: right;">
-            <div style="float: left; color: black; position: absolute; width: 100%; margin-top: 3em; font-size: 21px; padding: 2em 2em 0em 2em;">BUN BUN BAKE SHOP</div>
+	<div id="tableContainer">
+        <div id="invoice-header">
+            <div id="shop-name">BUN BUN BAKE SHOP</div>
 
-            <div style="float: right; color: black; position: relative; width: 100%; text-align: end; padding: 2em 3em 0em 2em;">INVOICE</div>
-            <div style="position: relative; text-align: end; padding: 0em 3em 0em 2em;">6th October 2017</div>
+            <div id="invoice-title">INVOICE</div>
+            <div id="date-title">6th October 2017</div>
 
-
-            <div style="position: relative; text-align: end; margin-top: 28px; padding: 0em 3em 0em 2em;"><span id="topcost">$0</span></div>
+            <div id="top-cost" >
+              <span id="topcost">$0</span>
+            </div>
         </div>
-
-        <div id="invoice-body" style="float:left; width:100%; background-color: (197, 197, 194, 0.05);">
-            <div id="tablePrint" class="receipt-container" style="">  </div> 
+        <div id="invoice-body" ">
+            <div id="tablePrint" class="receipt-container">  
+            </div> 
         </div>
-
-        <div id="invoice-footer" style="height: 10em; background-color: #f9fafc; width: 100%; float: right; margin-bottom:10em;">
-
-            <div style="float: right; position: relative; width: 100%; text-align: end; padding: 2em 3em 0em 2em;"><span id="subtotal_title" style="    float: left;margin-left: 80%;">Sub Total</span> <span id="subtotal" style="color: black;">$0</span></div>
-            <div style="position: relative; text-align: end; padding: 0em 3em 0em 2em;"><span id="discount" style="float: left;margin-left: 78%;">Discount</span> <span style="color: black;">-$0</span></div>
-
-
-            <div style="position: relative; text-align: end; margin-top: 28px; padding: 0em 3em 1em 2em;"><span style="color: black;float: left;margin-left: 78%;">Total Due</span> <span id="totaldue" style="color: #5fc37d;">$0</span></div>
-        </div>
-
-	         
+        <div id="invoice-footer" >
+            <div id="subtitle_container">
+              <span id="subtotal_title">Sub Total</span> 
+              <span id="subtotal_val" >$0</span>
+            </div>
+            <div id="discount-container" >
+              <span id="discount-title" >Discount</span> 
+              <span id="discount-value">-$0</span>
+            </div>
+            <div id="totaldue-container">
+              <span id="totaldue-title">Total Due</span> 
+              <span id="totaldue-value">$0</span>
+            </div>
+        </div>         
 	</div>
    <br> <br>
 
 	<div>
-		<nav id="confirm-checkout-green" onclick = "clearStorage();" style="">
+		<nav id="confirm-checkout-green" onclick = "clearStorage();">
 			<div>
-				<h4><a href="index.html" id="confirmcheckoutlink">Confirm Checkout $</a><span id="confirm-checkout">0</span></h4>
+				<h4>
+          <a href="index.html" id="confirmcheckoutlink">Confirm Checkout $</a>
+          <span id="confirm-checkout">0</span>
+        </h4>
 			</div>
 		</nav>
 	</div>

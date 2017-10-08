@@ -40,8 +40,8 @@ function calculateTotal() {
 
 	total = total.toFixed(2);
 	document.getElementById('confirm-checkout').innerHTML = "" + total;
-	document.getElementById('totaldue').innerHTML = "$" + total;
-	document.getElementById('subtotal').innerHTML = "$" + total;
+	document.getElementById('totaldue-value').innerHTML = "$" + total;
+	document.getElementById('subtotal_val').innerHTML = "$" + total;
 	document.getElementById('topcost').innerHTML = "$" + total;
 }
 

@@ -23,6 +23,109 @@ input[type=number]
     margin-top:300px;
     box-shadow: 10px 10px 5px #888888;
     background-color: rgba(149, 150, 148, 0.12);
+    background-color: rgba(149, 150, 148, 0);
+}
+
+#tableContainer #invoice-header {
+  height: 10em; 
+  background-color: #f9fafc; 
+  width: 100%; 
+  float: right;
+}
+
+#invoice-footer {
+  height: 10em; 
+  background-color: #f9fafc; 
+  width: 100%; 
+  float: right; 
+  margin-bottom:10em;
+}
+
+#invoice-body {
+  float:left; 
+  width:100%; 
+  background-color: (197, 197, 194, 0.05);
+}
+
+#invoice-title {
+  float: right; 
+  color: black; 
+  position: relative; 
+  width: 100%; 
+  text-align: end; 
+  padding: 2em 3em 0em 2em;
+}
+
+#totaldue-container {
+  position: relative; 
+  text-align: end; 
+  margin-top: 28px; 
+  padding: 0em 3em 1em 2em;
+}
+
+#totaldue-container #totaldue-title {
+  color: black;
+  float: left;
+  margin-left: 78%;
+}
+
+#totaldue-container #totaldue-value {
+  color: #5fc37d;
+}
+
+#discount-container {
+  position: relative; 
+  text-align: end; 
+  padding: 0em 3em 0em 2em;
+}
+
+#discount-container #discount-title {
+  float: left;
+  margin-left: 78%;
+}
+
+#discount-container #discount-value {
+  color: black;
+}
+
+#subtotal_title {
+  float: left;
+  margin-left: 80%;
+}
+
+#subtotal_val {
+  color: black;
+}
+
+#invoice-footer #subtitle_container {
+  float: right; 
+  position: relative; 
+  width: 100%; 
+  text-align: end; 
+  padding: 2em 3em 0em 2em;
+}
+
+#top-cost {
+  position: relative; 
+  text-align: end; 
+  margin-top: 28px; 
+  padding: 0em 3em 0em 2em;
+}
+
+#date-title {
+  position: relative; 
+  text-align: end; 
+  padding: 0em 3em 0em 2em;
+}
+
+#tableContainer #invoice-header #shop-name {
+  float: left; 
+  color: black; 
+  position: absolute; 
+  width: 100%; 
+  margin-top: 3em; 
+  font-size: 21px; 
+  padding: 2em 2em 0em 2em;
 }
 
 .nav #confirm-checkout-green {
