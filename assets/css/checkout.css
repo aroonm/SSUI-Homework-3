@@ -12,6 +12,11 @@ input[type=number]
   border-color: red;
 }
 
+#confirmcheckoutlink {
+  text-decoration: none;
+  color:white;
+}
+
 #tableContainer {
     margin: auto;
     width: 60%;

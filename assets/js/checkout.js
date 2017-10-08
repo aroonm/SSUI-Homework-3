@@ -4,8 +4,22 @@ var itemNames;
 	var itemTotalPrice;
 
 function preparePagePostLoad() {
+	//localStorage.clear();
+	itemNames = new Array();
+	itemQuant = new Array();
+	itemPrice = new Array();
+	itemTotalPrice = new Array();
+	itemNames = ['Bacon', 'Maple Apple Pecan', 'Pumpkin Spice', 'Birthday Cake', 'Cranberry', 'Blackberry'];
+	itemQuant = [1, 3, 1, 2, 2, 1];
+	itemPrice = [1.00, 3.00, 9.00, 1.11, 1.00, 1.65];
+
 	setCartScore();
 	generateReceipt();
+}
+
+function clearStorage() {
+	localStorage.clear();
+
 }
 
 function numberChanged(rowNumber) {
@@ -44,14 +58,9 @@ function setCartScore() {
 
 function generateReceipt() {
 
-	itemNames = new Array();
-	itemQuant = new Array();
-	itemPrice = new Array();
-	itemTotalPrice = new Array();
+	
 
-	itemNames = ['Bacon', 'Maple Apple Pecan', 'Pumpkin Spice', 'Birthday Cake', 'Cranberry', 'Blackberry'];
-	itemQuant = [1, 3, 1, 2, 2, 1];
-	itemPrice = [1.00, 3.00, 9.00, 1.11, 1.00, 1.65];
+	
 	
 
     var myTable= "<table style='border-color:red;'>";
