@@ -5,11 +5,13 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius:10px;
 }
 
 
 #sendmeanemail:hover, #sendmeanemail:active {
     background-color: rgb(32, 147, 243);
+    border-radius:10px;
 }
 
 #about-main-title {
