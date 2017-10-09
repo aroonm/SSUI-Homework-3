@@ -1,0 +1,25 @@
+#sendmeanemail:link, #sendmeanemail:visited {
+    background-color: rgb(126, 195, 253);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#sendmeanemail:hover, #sendmeanemail:active {
+    background-color: rgb(32, 147, 243);
+}
+
+#about-main-title {
+	margin-top: 300px;
+}
+
+#mailsection {
+	margin-top: 10em;
+}
+
+.about-content {
+	padding: 0em 10em;
+}
